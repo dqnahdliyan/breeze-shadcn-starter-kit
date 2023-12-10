@@ -1,14 +1,14 @@
 import { Card } from "@/Components/ui/card";
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import Authenticated from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
 
-export default function Dashboard() {
+export default function Home() {
     return (
         <>
-            <Head title="Dashboard" />
+            <Head title="Home" />
 
             <h2 className="mb-4 text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
-                Dashboard
+                Home
             </h2>
 
             <Card className="p-6 text-gray-900 shadow-none dark:text-gray-100">
@@ -18,4 +18,4 @@ export default function Dashboard() {
     );
 }
 
-Dashboard.layout = (page) => <AuthenticatedLayout children={page} />;
+Home.layout = (page) => <Authenticated children={page} />;
